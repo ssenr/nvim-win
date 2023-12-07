@@ -1,11 +1,21 @@
 # nvim-win
 lazy nvim rip-off on win that I setup (copied)
 
-Works outta the box
-Just clone to ~/.config/
-```bash
-# Clone to ~/.config/
+Neovim config lookup paths:
+On Windows:
+AppData/Local/
+
+On Linux:
+~/.config/
+
+```
+# cd to path above
+# Clone
 git clone https://github.com/ssenr/nvim-win/
-# Rename
+
+# Rename Windows
+Rename-Item ./nvim-win nvim
+
+# Rename Linux
 mv ./nvim-win nvim
 ```
