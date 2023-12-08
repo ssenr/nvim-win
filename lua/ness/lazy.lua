@@ -124,8 +124,7 @@ require("lazy").setup({
                 callback = function()
                     vim.b.miniindentscope_disable = true
                 end,
-            })
-        end,
+            }) end,
         config = function (_,opts)
             require("mini.indentscope").setup(opts)
         end
@@ -194,6 +193,20 @@ require("lazy").setup({
         deactivate = function()
             vim.cmd([[Neotree close]])
         end,
+        opts = {
+            filesystem ={
+                filtered_items = {
+                    hide_gitignored = false,
+                    always_show = {
+                        ".gitignored"
+                    },
+                    hide_dotfiles = false
+                }
+            }
+        },
+        config = function (_,opts)
+            require("neo-tree").setup(opts)
+        end
     },
 
     -- Which Key
