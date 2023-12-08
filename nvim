@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# chmod +x nvim 
+# To many into an executable ^
+# Place into /usr/bin or create an alias or wtv
+
+# Check for an arg to load file
+# Unfortunately when you use sudo to open protected files some settings don't load
+if [[ "$#" -gt 0 ]]; then
+  # Replace with Path to nvim
+  /home/overlord/Downloads/nvim-linux64/bin/nvim $1
+else
+  /home/overlord/Downloads/nvim-linux64/bin/nvim
+fi
