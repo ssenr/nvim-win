@@ -201,7 +201,9 @@ require("lazy").setup({
                         ".gitignored"
                     },
                     hide_dotfiles = false
-                }
+                },
+                hijack_netrw_behavior = "open_default",
+                use_libuv_file_watcher = true
             }
         },
         config = function (_,opts)
